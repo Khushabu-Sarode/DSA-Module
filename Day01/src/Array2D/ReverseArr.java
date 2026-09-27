@@ -1,0 +1,34 @@
+package Array2D;
+
+public class ReverseArr {
+	
+	public static void reversearr(int []arr) {
+		int n = 5;
+		 int s = 0;
+	       int e = n - 1;
+	      while(s<=e) {
+//	    	   swap(arr[s], arr[e]);
+	    	   int temp = arr[s];
+	    	   arr[s] = arr[e];
+	    	   arr[e] = temp;
+	    	   
+	    	   s++;
+	    	   e--;
+	    	   
+	       }
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int []arr = {1,2,3,4,5};
+       
+       int n = 5;
+      
+       reversearr(arr);
+       
+       for(int i=0;i<n;i++) {
+    	   System.out.print(arr[i] + " ");
+       }
+	}
+
+}

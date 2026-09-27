@@ -1,0 +1,43 @@
+package Array2D;
+
+public class Rotate90Degree {
+	
+	public static void reversearr(int[ arr,int s,int e) {
+		while(s<=e) {
+			int temp= arr[s];
+			arr[s] = arr[e];
+			arr[e] = temp;
+			
+			s++;
+			e--;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][] arr = {
+			    {1, 2, 3},
+			    {4,5,6},
+			    {7,8,9}
+		};
+		
+		int r = arr.length;
+		int c = arr[0].length;
+		
+		for(int i=0;i<r;i++) {
+			for(int j=0;j<c;j++) {
+				arr[i][j] = arr[j][i];
+			}
+			System.out.println();
+		}
+		
+		for(int i=0;i<r;i++) {
+			for(int j=0;j<c;j++) {
+				reversearr(arr[i],r,c);	
+			}
+		}
+		
+		
+	}
+
+}

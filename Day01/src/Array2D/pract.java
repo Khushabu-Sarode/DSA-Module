@@ -1,0 +1,29 @@
+package Array2D;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class pract {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      List<String> name = new ArrayList<>();
+      name.add("i");
+      name.add("am");
+      name.add("the");
+      name.add("best");
+      
+      for(String nam : name) {
+    	  System.out.println(nam);
+      }
+      
+      Iterator<String> iterator = name.iterator();
+      
+      while(iterator.hasNext()) {
+    	  System.out.println(iterator.next());
+      }
+      
+	}
+
+}
