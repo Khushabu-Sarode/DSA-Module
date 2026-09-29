@@ -1,5 +1,8 @@
 package Stack;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class Stack {
      
 	private int maxsize;
@@ -47,4 +50,10 @@ public class Stack {
 			}
 		}
 	}
+//	public int minEle() {
+//		Deque<Integer> s = new ArrayDeque<>();
+//		s.push(arr[top]);
+// 	}
+//	
+	
 }
